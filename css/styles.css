@@ -1,0 +1,33 @@
+.alert__button{
+    background-color: transparent;
+    border-color: lightseagreen;
+    border-radius: 1px;
+    border-style: dashed;
+    width: 10%;
+    height: 40px;
+    position: absolute;
+    left: 45%;
+}
+#someTextInput{
+    border-style: dashed;
+    border-color: lightseagreen;
+    border-width: 1px;
+    width: 200px;
+}
+#someTextInput:focus{
+    outline: none;
+}
+.reusable_button{
+    border-color: pink;
+    border-style: solid;
+    width: 5%;
+    height: 40px;
+}
+.image{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+body{
+    background: #121212;
+}

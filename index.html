@@ -1,0 +1,93 @@
+<!--<head>
+    <title>h1</title>
+    <meta charset="UTF-8"/>
+</head>
+<body>
+<h1 id="head" onmouseover="colorChange()" onmouseleave="reverseColorChange()">Добро пожаловать на
+    нашу страницу!</h1>
+<script>
+    let head = document.getElementById('head');
+    let currentColor = '';
+    function colorChange()
+    {
+        currentColor = head.style.color;
+        head.style.color = "red";
+    }
+    let reverseColorChange = () => {
+        head.style.color = currentColor;
+    }
+</script>
+</body>
+</html>-->
+<!--<html>
+<head>
+    <title>text decoration</title>
+    <meta charset="UTF-8"/>
+</head>
+<body>
+<h1 id="head" onmouseover="addUnderline()"
+    onmouseout="removeUnderline()" ondblclick="manageThroughLine()" onclick="manageOverline()" >
+    Добро пожаловать на нашу страницу!
+</h1>
+<script>
+    let head = document.getElementById('head');
+    function addUnderline()
+    {
+        head.style.textDecoration = "underline";
+    }
+    function removeUnderline()
+    {
+        head.style.textDecoration = "none";
+    }
+    let manageOverline = () => {
+        if(head.style.textDecoration === 'overline'){
+            head.style.textDecoration = 'none';
+        }
+        else{
+            head.style.textDecoration = 'overline';
+        }
+    }
+    let manageThroughLine = () => {
+        if(head.style.textDecoration === 'line-through'){
+            head.style.textDecoration = 'none';
+        }
+        else{
+            head.style.textDecoration = 'line-through';
+        }
+    }
+</script>
+</body>
+</html>-->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/index.js"></script>
+</head>
+<body>
+<button class="block-button">Button block</button>
+<input type="text" class="block-input" value="Button input">
+<img src="img/1.jpg" class="image" alt="Image" id="imageForChange" onclick="chooseRandomImage()">
+<input type="text" id="widthField">
+<button onclick="changeWidth()">Change Width</button>
+
+<div style="margin-top: 25px">
+    <input type="text" style="display: block" id="input1" onchange="setInput2Value()" >
+    <input type="text" style="display: block" id="input2" onchange="setInput1Value()" style="margin-top: 25px">
+
+</div>
+<div style="margin-top: 25px">
+    <button onclick="setYellowColor()">Yellow</button>
+    <button onclick="setGreenColor()">Green</button>
+    <input value="Color" id="changeableInput">
+</div>
+<div style="margin-top: 25px">
+    <p style="font-weight: bold; font-family: Arial; color: white;" id="changeText">Нажатий на кнопку: </p>
+    <button onclick="changeCountValue()">Click me</button>
+</div>
+</body>
+</html>
